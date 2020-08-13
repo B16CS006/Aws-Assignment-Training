@@ -1,0 +1,28 @@
+{
+  "name": "cristro_bot",
+  "version": "1.0.0",
+  "description": "Manage Ludo Group",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chetan Prakash Meena (B16CS006) <meena.13@iitj.ac.in> (https://github.com/b16cs006)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^7.14.2",
+    "firebase-admin": "^8.11.0"
+  },
+  "routes": [
+    {
+      "src": "/message",
+      "methods": [
+        "POST"
+      ],
+      "dest": "/index.js"
+    }
+  ]
+}
